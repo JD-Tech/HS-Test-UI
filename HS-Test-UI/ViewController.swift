@@ -9,6 +9,8 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    @IBOutlet var image: NSImageView
                             
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>hs_widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>58065A2D19C042A7005CC285</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>582008341A023A2F001A9BCE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

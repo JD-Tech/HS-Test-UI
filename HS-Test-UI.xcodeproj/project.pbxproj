@@ -13,6 +13,13 @@
 		58065A2619C042A7005CC285 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58065A2519C042A7005CC285 /* Images.xcassets */; };
 		58065A2919C042A7005CC285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58065A2719C042A7005CC285 /* Main.storyboard */; };
 		58065A3519C042A7005CC285 /* HS_Test_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58065A3419C042A7005CC285 /* HS_Test_UITests.swift */; };
+		582008381A023A2F001A9BCE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582008371A023A2F001A9BCE /* NotificationCenter.framework */; };
+		5820083F1A023A2F001A9BCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5820083D1A023A2F001A9BCE /* InfoPlist.strings */; };
+		582008411A023A2F001A9BCE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582008401A023A2F001A9BCE /* TodayViewController.swift */; };
+		582008431A023A2F001A9BCE /* ListRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582008421A023A2F001A9BCE /* ListRowViewController.swift */; };
+		582008451A023A2F001A9BCE /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582008441A023A2F001A9BCE /* TodayViewController.xib */; };
+		582008471A023A2F001A9BCE /* ListRowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582008461A023A2F001A9BCE /* ListRowViewController.xib */; };
+		5820084A1A023A2F001A9BCE /* hs_widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 582008351A023A2F001A9BCE /* hs_widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,28 @@
 			remoteGlobalIDString = 58065A1919C042A6005CC285;
 			remoteInfo = "HS-Test-UI";
 		};
+		582008481A023A2F001A9BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58065A1219C042A6005CC285 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 582008341A023A2F001A9BCE;
+			remoteInfo = hs_widget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5820084E1A023A2F001A9BCE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5820084A1A023A2F001A9BCE /* hs_widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		58065A1A19C042A6005CC285 /* HS-Test-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HS-Test-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +64,15 @@
 		58065A2E19C042A7005CC285 /* HS-Test-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HS-Test-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58065A3319C042A7005CC285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58065A3419C042A7005CC285 /* HS_Test_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HS_Test_UITests.swift; sourceTree = "<group>"; };
+		582008351A023A2F001A9BCE /* hs_widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = hs_widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		582008371A023A2F001A9BCE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5820083B1A023A2F001A9BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5820083C1A023A2F001A9BCE /* hs_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = hs_widget.entitlements; sourceTree = "<group>"; };
+		5820083E1A023A2F001A9BCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		582008401A023A2F001A9BCE /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		582008421A023A2F001A9BCE /* ListRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowViewController.swift; sourceTree = "<group>"; };
+		582008441A023A2F001A9BCE /* TodayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayViewController.xib; sourceTree = "<group>"; };
+		582008461A023A2F001A9BCE /* ListRowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListRowViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +90,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		582008321A023A2F001A9BCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582008381A023A2F001A9BCE /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +106,8 @@
 			children = (
 				58065A1C19C042A6005CC285 /* HS-Test-UI */,
 				58065A3119C042A7005CC285 /* HS-Test-UITests */,
+				582008391A023A2F001A9BCE /* hs_widget */,
+				582008361A023A2F001A9BCE /* Frameworks */,
 				58065A1B19C042A6005CC285 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +117,7 @@
 			children = (
 				58065A1A19C042A6005CC285 /* HS-Test-UI.app */,
 				58065A2E19C042A7005CC285 /* HS-Test-UITests.xctest */,
+				582008351A023A2F001A9BCE /* hs_widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +160,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		582008361A023A2F001A9BCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				582008371A023A2F001A9BCE /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		582008391A023A2F001A9BCE /* hs_widget */ = {
+			isa = PBXGroup;
+			children = (
+				582008401A023A2F001A9BCE /* TodayViewController.swift */,
+				582008421A023A2F001A9BCE /* ListRowViewController.swift */,
+				582008441A023A2F001A9BCE /* TodayViewController.xib */,
+				582008461A023A2F001A9BCE /* ListRowViewController.xib */,
+				5820083A1A023A2F001A9BCE /* Supporting Files */,
+			);
+			path = hs_widget;
+			sourceTree = "<group>";
+		};
+		5820083A1A023A2F001A9BCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5820083B1A023A2F001A9BCE /* Info.plist */,
+				5820083C1A023A2F001A9BCE /* hs_widget.entitlements */,
+				5820083D1A023A2F001A9BCE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +200,12 @@
 				58065A1619C042A6005CC285 /* Sources */,
 				58065A1719C042A6005CC285 /* Frameworks */,
 				58065A1819C042A6005CC285 /* Resources */,
+				5820084E1A023A2F001A9BCE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				582008491A023A2F001A9BCE /* PBXTargetDependency */,
 			);
 			name = "HS-Test-UI";
 			productName = "HS-Test-UI";
@@ -150,6 +230,23 @@
 			productReference = 58065A2E19C042A7005CC285 /* HS-Test-UITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		582008341A023A2F001A9BCE /* hs_widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5820084D1A023A2F001A9BCE /* Build configuration list for PBXNativeTarget "hs_widget" */;
+			buildPhases = (
+				582008311A023A2F001A9BCE /* Sources */,
+				582008321A023A2F001A9BCE /* Frameworks */,
+				582008331A023A2F001A9BCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hs_widget;
+			productName = hs_widget;
+			productReference = 582008351A023A2F001A9BCE /* hs_widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +262,9 @@
 					58065A2D19C042A7005CC285 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 58065A1919C042A6005CC285;
+					};
+					582008341A023A2F001A9BCE = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -183,6 +283,7 @@
 			targets = (
 				58065A1919C042A6005CC285 /* HS-Test-UI */,
 				58065A2D19C042A7005CC285 /* HS-Test-UITests */,
+				582008341A023A2F001A9BCE /* hs_widget */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +302,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582008331A023A2F001A9BCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582008471A023A2F001A9BCE /* ListRowViewController.xib in Resources */,
+				582008451A023A2F001A9BCE /* TodayViewController.xib in Resources */,
+				5820083F1A023A2F001A9BCE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +336,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		582008311A023A2F001A9BCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582008411A023A2F001A9BCE /* TodayViewController.swift in Sources */,
+				582008431A023A2F001A9BCE /* ListRowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +352,11 @@
 			isa = PBXTargetDependency;
 			target = 58065A1919C042A6005CC285 /* HS-Test-UI */;
 			targetProxy = 58065A2F19C042A7005CC285 /* PBXContainerItemProxy */;
+		};
+		582008491A023A2F001A9BCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 582008341A023A2F001A9BCE /* hs_widget */;
+			targetProxy = 582008481A023A2F001A9BCE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -242,6 +367,14 @@
 				58065A2819C042A7005CC285 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5820083D1A023A2F001A9BCE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5820083E1A023A2F001A9BCE /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -329,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "HS-Test-UI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "HS-Test-UI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,6 +517,36 @@
 			};
 			name = Release;
 		};
+		5820084B1A023A2F001A9BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = hs_widget/hs_widget.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = hs_widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5820084C1A023A2F001A9BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = hs_widget/hs_widget.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = hs_widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -401,12 +566,22 @@
 				58065A3A19C042A7005CC285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58065A3B19C042A7005CC285 /* Build configuration list for PBXNativeTarget "HS-Test-UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58065A3C19C042A7005CC285 /* Debug */,
 				58065A3D19C042A7005CC285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5820084D1A023A2F001A9BCE /* Build configuration list for PBXNativeTarget "hs_widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5820084B1A023A2F001A9BCE /* Debug */,
+				5820084C1A023A2F001A9BCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
